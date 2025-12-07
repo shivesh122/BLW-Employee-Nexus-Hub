@@ -147,9 +147,9 @@ This project is licensed under the MIT License.
 
 ✉️ Contact
 
-Developer: Shivesh Tiwari and Anurag Gupta
+Developer: Shivesh Tiwari, Anurag Gupta and Anubhav Sharma
 
-Email: nikutiwari70@gmail.com
+Email: nikutiwari70@gmail.com & avsharma2312@gmail.com
 
 LinkedIn: https://www.linkedin.com/in/shivesh-tiwari-68b79a245 
 
