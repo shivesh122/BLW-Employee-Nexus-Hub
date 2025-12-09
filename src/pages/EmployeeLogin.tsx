@@ -214,7 +214,7 @@ const EmployeeLogin = () => {
                       </button>
                     </div>
                   </div>
-<a href="EmployeeDashboard.tsx" class="button-class">  <Button type="submit" className="w-full" disabled={loading}>
+<a href="employee_Dashboard.html" class="button-class">  <Button type="submit" className="w-full" disabled={loading}>
                     {loading ? "Signing In..." : "Sign In to Dashboard"}
                   </Button>
 </a>
