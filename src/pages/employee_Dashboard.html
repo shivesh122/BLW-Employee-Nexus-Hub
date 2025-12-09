@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background: #1e293b;
+            color: #fff;
+            padding: 20px;
+            position: fixed;
+        }
+        .sidebar h2 {
+            margin-bottom: 30px;
+        }
+        .sidebar a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 0;
+            margin: 8px 0;
+        }
+        .sidebar a:hover {
+            background: #334155;
+            padding-left: 10px;
+            transition: 0.3s;
+        }
+        .main-content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+        .card {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .card h3 {
+            margin-bottom: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background: #e2e8f0;
+        }
+        /* Simple fade-in animation */
+    .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 0.8s ease forwards;
+    }
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Sidebar slide animation */
+    .sidebar {
+        animation: slideIn 0.6s ease forwards;
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    @keyframes slideIn {
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Employee Dashboard</h2>
+        <a href="#profile">Profile</a>
+        <a href="#leave">Leave Status</a>
+        <a href="#schedule">Work Schedule</a>
+        <a href="#progress">Progress</a>
+        <a href="#tasks">Tasks</a>
+        <a href="#reports">Reports</a>
+    </div>
+
+    <div class="main-content fade-in">
+        <div id="profile" class="card">
+            <h3>Employee Profile</h3>
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Employee ID:</strong> EMP123</p>
+            <p><strong>Department:</strong> Engineering</p>
+            <p><strong>Position:</strong> Software Developer</p>
+        </div>
+
+        <div id="leave" class="card">
+            <h3>Leave Status</h3>
+            <table>
+                <tr>
+                    <th>Leave Type</th>
+                    <th>Available</th>
+                    <th>Taken</th>
+                    <th>Remaining</th>
+                </tr>
+                <tr>
+                    <td>Sick Leave</td>
+                    <td>10</td>
+                    <td>2</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Casual Leave</td>
+                    <td>12</td>
+                    <td>3</td>
+                    <td>9</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="schedule" class="card">
+            <h3>Work Schedule</h3>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Shift</th>
+                    <th>Task</th>
+                </tr>
+                <tr>
+                    <td>2025-12-10</td>
+                    <td>Morning</td>
+                    <td>Module Development</td>
+                </tr>
+                <tr>
+                    <td>2025-12-11</td>
+                    <td>Evening</td>
+                    <td>Team Review Meeting</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="progress" class="card">
+            <h3>Progress Report</h3>
+            <p><strong>Completed Tasks:</strong> 15</p>
+            <p><strong>Ongoing Tasks:</strong> 4</p>
+            <p><strong>Overall Performance:</strong> 80%</p>
+        </div>
+
+        <div id="tasks" class="card">
+            <h3>Assigned Tasks</h3>
+            <ul>
+                <li>Fix bugs in authentication module</li>
+                <li>Prepare weekly report</li>
+                <li>Update project documentation</li>
+            </ul>
+        </div>
+
+        <div id="reports" class="card">
+            <h3>Reports</h3>
+            <p>You can download your monthly progress reports from here.</p>
+        </div>
+    </div>
+</body>
+</html>
