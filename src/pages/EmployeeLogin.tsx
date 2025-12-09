@@ -214,8 +214,9 @@ const EmployeeLogin = () => {
                       </button>
                     </div>
                   </div>
- <Button  onclick="location.href='src/pages/employee_Dashboard.html'" type="submit" className="w-full" disabled={loading}>
+ <Button type="submit" className="w-full" disabled={loading}>
                     {loading ? "Signing In..." : "Sign In to Dashboard"}
+   <Button onclick="location.href='src/pages/employee_Dashboard.html'">...</Button>
                   </Button>
                 
                 </form>
